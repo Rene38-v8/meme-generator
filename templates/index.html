@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+</head>
+<body>
+
+    <h1>Meme Generator</h1>
+
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+
+        <label>Izberi fotografijo:</label>
+        <input type="file" name="image" accept="image/*" required>
+
+        <br><br>
+
+        <label>Zgornje besedilo:</label>
+        <input type="text" name="top_text">
+
+        <br><br>
+
+        <label>Spodnje besedilo:</label>
+        <input type="text" name="bottom_text">
+
+        <br><br>
+
+        <button type="submit">Ustvari</button>
+
+    </form>
+
+</body>
+</html>
